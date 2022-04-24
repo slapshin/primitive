@@ -112,7 +112,7 @@ func main() {
 		}
 	}
 	if !ok {
-		fmt.Println("Usage: primitive [OPTIONS] -i input -o output -n count")
+		fmt.Println("Usage: internal [OPTIONS] -i input -o output -n count")
 		flag.PrintDefaults()
 		os.Exit(1)
 	}

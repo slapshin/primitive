@@ -14,7 +14,7 @@ def makedirs(x):
 def primitive(i, o, n, a, m):
     makedirs(os.path.split(o)[0])
     args = (i, o, n, a, m)
-    cmd = 'primitive -r 128 -s 512 -i %s -o %s -n %d -a %d -m %d' % args
+    cmd = 'internal -r 128 -s 512 -i %s -o %s -n %d -a %d -m %d' % args
     subprocess.call(cmd, shell=True)
 
 def create_jobs(in_folder, out_folder, n, a, m):
